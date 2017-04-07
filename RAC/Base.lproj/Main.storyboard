@@ -138,7 +138,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MMn-Hl-Xgc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1135.2" y="689.5052473763119"/>
+            <point key="canvasLocation" x="-1279" y="-65"/>
         </scene>
         <!--View Controller3-->
         <scene sceneID="Jnh-Ai-7Cu">
@@ -229,6 +229,14 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PVq-Iq-J6J">
+                                <rect key="frame" x="314" y="20" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="下一页"/>
+                                <connections>
+                                    <segue destination="Cuv-A7-2cD" kind="presentation" id="ncN-eF-OXQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                     </view>
                     <connections>
@@ -243,7 +251,50 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nuX-Nu-vs8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-258.39999999999998" y="689.5052473763119"/>
+            <point key="canvasLocation" x="-588" y="-65"/>
+        </scene>
+        <!--View Controller4-->
+        <scene sceneID="7Qv-Cm-AbY">
+            <objects>
+                <viewController id="Cuv-A7-2cD" customClass="ViewController4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="02E-XS-ET7"/>
+                        <viewControllerLayoutGuide type="bottom" id="IWI-bh-Crv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="tkP-7L-G5x">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="RAC自动定位" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Bni-LG-ztO">
+                                <rect key="frame" x="91" y="28" width="209" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="定位中..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rvD-wa-rMi">
+                                <rect key="frame" x="16" y="196" width="305" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HwS-uC-gEk">
+                                <rect key="frame" x="99" y="115" width="62" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="开始定位"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="HwS-uC-gEk" id="MYe-VF-YeK"/>
+                        <outlet property="cityLabel" destination="rvD-wa-rMi" id="ZP2-rc-YmR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kYE-lk-8FO" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="104.8" y="-65.217391304347828"/>
         </scene>
     </scenes>
 </document>

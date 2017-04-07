@@ -21,6 +21,8 @@ typedef NS_ENUM(NSInteger, RefreshType) {
     {
         UIRefreshControl *_freshControl;
         UIButton *btn;
+        
+        CGFloat *_lastY;
     }
     
 @end
@@ -32,7 +34,6 @@ typedef NS_ENUM(NSInteger, RefreshType) {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     
-    
     btn = [UIButton buttonWithType:UIButtonTypeCustom];
     btn.frame = CGRectMake(self.view.frame.size.width - 80 , VIEWHEIGHT - 80 , 60, 60);
     btn.backgroundColor = [UIColor redColor];
@@ -42,12 +43,17 @@ typedef NS_ENUM(NSInteger, RefreshType) {
     self.tableView.delegate =self;
     self.tableView.dataSource = self;
   
-    [RACObserve(self.tableView, contentOffset) map:^id _Nullable(id  _Nullable value) {
+    [[[RACObserve(self.tableView, contentOffset) map:^id _Nullable(id  _Nullable value) {
         
-        NSLog(@"value = %@",value);
+        return @(self.tableView.contentOffset.y);
         
-        return value;
+    }] distinctUntilChanged] subscribeNext:^(id  _Nullable x) {
+
+        
+        NSLog(@"x == %@",x);
     }];
+    
+    
     
     
     /*

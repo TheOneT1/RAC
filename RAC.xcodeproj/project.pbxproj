@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		701078611E8E343300DCBC93 /* ViewController2.m in Sources */ = {isa = PBXBuildFile; fileRef = 701078601E8E343300DCBC93 /* ViewController2.m */; };
 		701078641E8E344000DCBC93 /* ViewController3.m in Sources */ = {isa = PBXBuildFile; fileRef = 701078631E8E344000DCBC93 /* ViewController3.m */; };
+		702BDDBA1E95D74600F84F11 /* ViewController4.m in Sources */ = {isa = PBXBuildFile; fileRef = 702BDDB91E95D74600F84F11 /* ViewController4.m */; };
+		702BDDBD1E9621D300F84F11 /* RACLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 702BDDBC1E9621D300F84F11 /* RACLocationManager.m */; };
 		703700361E8DECFB0014A608 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 703700351E8DECFB0014A608 /* main.m */; };
 		703700391E8DECFB0014A608 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 703700381E8DECFB0014A608 /* AppDelegate.m */; };
 		7037003C1E8DECFB0014A608 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7037003B1E8DECFB0014A608 /* ViewController.m */; };
@@ -26,6 +28,10 @@
 		701078621E8E344000DCBC93 /* ViewController3.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController3.h; sourceTree = "<group>"; };
 		701078631E8E344000DCBC93 /* ViewController3.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController3.m; sourceTree = "<group>"; };
 		701078651E8E35AC00DCBC93 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PrefixHeader.pch; path = ../PrefixHeader.pch; sourceTree = "<group>"; };
+		702BDDB81E95D74600F84F11 /* ViewController4.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController4.h; sourceTree = "<group>"; };
+		702BDDB91E95D74600F84F11 /* ViewController4.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController4.m; sourceTree = "<group>"; };
+		702BDDBB1E9621D300F84F11 /* RACLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RACLocationManager.h; sourceTree = "<group>"; };
+		702BDDBC1E9621D300F84F11 /* RACLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RACLocationManager.m; sourceTree = "<group>"; };
 		703700311E8DECFB0014A608 /* RAC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RAC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		703700351E8DECFB0014A608 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		703700371E8DECFB0014A608 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -59,6 +65,37 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		702BDDBE1E96358F00F84F11 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				702BDDBB1E9621D300F84F11 /* RACLocationManager.h */,
+				702BDDBC1E9621D300F84F11 /* RACLocationManager.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		702BDDBF1E96359B00F84F11 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		702BDDC01E9635AE00F84F11 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				7037003A1E8DECFB0014A608 /* ViewController.h */,
+				7037003B1E8DECFB0014A608 /* ViewController.m */,
+				7010785F1E8E343300DCBC93 /* ViewController2.h */,
+				701078601E8E343300DCBC93 /* ViewController2.m */,
+				701078621E8E344000DCBC93 /* ViewController3.h */,
+				701078631E8E344000DCBC93 /* ViewController3.m */,
+				702BDDB81E95D74600F84F11 /* ViewController4.h */,
+				702BDDB91E95D74600F84F11 /* ViewController4.m */,
+			);
+			name = ViewController;
+			sourceTree = "<group>";
+		};
 		703700281E8DECFA0014A608 = {
 			isa = PBXGroup;
 			children = (
@@ -82,12 +119,9 @@
 			children = (
 				703700371E8DECFB0014A608 /* AppDelegate.h */,
 				703700381E8DECFB0014A608 /* AppDelegate.m */,
-				7037003A1E8DECFB0014A608 /* ViewController.h */,
-				7037003B1E8DECFB0014A608 /* ViewController.m */,
-				7010785F1E8E343300DCBC93 /* ViewController2.h */,
-				701078601E8E343300DCBC93 /* ViewController2.m */,
-				701078621E8E344000DCBC93 /* ViewController3.h */,
-				701078631E8E344000DCBC93 /* ViewController3.m */,
+				702BDDBE1E96358F00F84F11 /* Model */,
+				702BDDC01E9635AE00F84F11 /* ViewController */,
+				702BDDBF1E96359B00F84F11 /* ViewModel */,
 				7037003D1E8DECFB0014A608 /* Main.storyboard */,
 				703700401E8DECFB0014A608 /* Assets.xcassets */,
 				703700421E8DECFB0014A608 /* LaunchScreen.storyboard */,
@@ -149,6 +183,7 @@
 				TargetAttributes = {
 					703700301E8DECFB0014A608 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Y6QS4M38X3;
 						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
@@ -238,11 +273,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				702BDDBD1E9621D300F84F11 /* RACLocationManager.m in Sources */,
 				7037003C1E8DECFB0014A608 /* ViewController.m in Sources */,
 				701078611E8E343300DCBC93 /* ViewController2.m in Sources */,
 				703700391E8DECFB0014A608 /* AppDelegate.m in Sources */,
 				703700361E8DECFB0014A608 /* main.m in Sources */,
 				701078641E8E344000DCBC93 /* ViewController3.m in Sources */,
+				702BDDBA1E95D74600F84F11 /* ViewController4.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -361,11 +398,13 @@
 			baseConfigurationReference = 11F40058E1455433D69D28CA /* Pods-RAC.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y6QS4M38X3;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
-				GCC_PREFIX_HEADER = /Users/edz/Desktop/RAC/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/edz/RAC/PrefixHeader.pch;
 				INFOPLIST_FILE = RAC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = yangyunlong.RAC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xkdiosdev014.p009;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
@@ -376,11 +415,13 @@
 			baseConfigurationReference = 49A5B563DD8A96D2827812BA /* Pods-RAC.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y6QS4M38X3;
 				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = YES;
-				GCC_PREFIX_HEADER = /Users/edz/Desktop/RAC/PrefixHeader.pch;
+				GCC_PREFIX_HEADER = /Users/edz/RAC/PrefixHeader.pch;
 				INFOPLIST_FILE = RAC/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = yangyunlong.RAC;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xkdiosdev014.p009;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 			};
